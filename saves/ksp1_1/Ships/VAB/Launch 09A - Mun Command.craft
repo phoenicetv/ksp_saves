@@ -258,7 +258,7 @@ PART
 		{
 			DeployAction
 			{
-				actionGroup = RCS
+				actionGroup = None
 			}
 			ResetAction
 			{
@@ -466,7 +466,7 @@ PART
 	RESOURCE
 	{
 		name = MonoPropellant
-		amount = 24.0000003576279
+		amount = 30
 		maxAmount = 30
 		flowState = True
 		isTweakable = True
@@ -960,13 +960,13 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	link = RCSBlock_4293465916
-	link = RCSBlock_4293465876
-	link = RCSBlock_4293465836
-	link = RCSBlock_4293465796
-	link = RCSBlock_4293465756
-	link = RCSBlock_4293465716
 	link = fuelTank1-2_4293465454
+	link = RCSBlock_4293465916
+	link = RCSBlock_4293996184
+	link = RCSBlock_4293996098
+	link = RCSBlock_4293996012
+	link = RCSBlock_4293995926
+	link = RCSBlock_4293995840
 	attN = top,decoupler1-2_4293466016
 	attN = bottom,fuelTank1-2_4293465454
 	EVENTS
@@ -1030,930 +1030,6 @@ PART
 				actionGroup = None
 			}
 			Toggle
-			{
-				actionGroup = None
-			}
-		}
-	}
-}
-PART
-{
-	part = RCSBlock_4293465916
-	partName = Part
-	pos = -1.228632,23.44361,-0.7275688
-	attPos = 0,0,0
-	attPos0 = -1.251219,-0.005910873,-0.3344945
-	rot = 0,-0.1305262,0,0.9914449
-	attRot = 0,0,0,1
-	attRot0 = 0,-0.1305262,0,0.9914449
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 4
-	dstg = 4
-	sidx = -1
-	sqor = -1
-	sepI = 1
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = RCSBlock_4293465876
-	sym = RCSBlock_4293465836
-	sym = RCSBlock_4293465796
-	sym = RCSBlock_4293465756
-	sym = RCSBlock_4293465716
-	srfN = srfAttach,asasmodule1-2_4293465944
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleRCS
-		isEnabled = True
-		rcsEnabled = True
-		thrustPercentage = 100
-		currentShowToggles = False
-		enableYaw = True
-		enablePitch = True
-		enableRoll = True
-		enableX = True
-		enableY = True
-		enableZ = True
-		useThrottle = False
-		fullThrust = False
-		stagingEnabled = True
-		thrustPercentage_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 100
-			stepIncrement = 0.5
-		}
-		enableYaw_UIFlight
-		{
-			controlEnabled = True
-		}
-		enablePitch_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableRoll_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableX_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableY_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableZ_UIFlight
-		{
-			controlEnabled = True
-		}
-		useThrottle_UIFlight
-		{
-			controlEnabled = True
-		}
-		fullThrust_UIFlight
-		{
-			controlEnabled = True
-		}
-		EVENTS
-		{
-			ToggleToggles
-			{
-				active = True
-				guiActive = True
-				guiActiveEditor = True
-				guiActiveUncommand = False
-				guiIcon = Actuation Toggles
-				guiName = Show Actuation Toggles
-				category = Actuation Toggles
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Disable
-			{
-				active = True
-				guiActive = True
-				guiActiveEditor = True
-				guiActiveUncommand = False
-				guiIcon = Disable RCS Port
-				guiName = Disable RCS Port
-				category = Disable RCS Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Enable
-			{
-				active = False
-				guiActive = True
-				guiActiveEditor = True
-				guiActiveUncommand = False
-				guiIcon = Enable RCS Port
-				guiName = Enable RCS Port
-				category = Enable RCS Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = RCS: Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-}
-PART
-{
-	part = RCSBlock_4293465876
-	partName = Part
-	pos = -0.8927033,23.44361,0.5232656
-	attPos = 0,0,0
-	attPos0 = -0.9152901,-0.005910873,0.9163399
-	rot = 0,0.3826834,0,0.9238796
-	attRot = 0,0,0,1
-	attRot0 = 0,0.3826834,0,0.9238796
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 4
-	dstg = 4
-	sidx = -1
-	sqor = -1
-	sepI = 1
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = RCSBlock_4293465916
-	sym = RCSBlock_4293465836
-	sym = RCSBlock_4293465796
-	sym = RCSBlock_4293465756
-	sym = RCSBlock_4293465716
-	srfN = srfAttach,asasmodule1-2_4293465944
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleRCS
-		isEnabled = True
-		rcsEnabled = True
-		thrustPercentage = 100
-		currentShowToggles = False
-		enableYaw = True
-		enablePitch = True
-		enableRoll = True
-		enableX = True
-		enableY = True
-		enableZ = True
-		useThrottle = False
-		fullThrust = False
-		stagingEnabled = True
-		thrustPercentage_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 100
-			stepIncrement = 0.5
-		}
-		enableYaw_UIFlight
-		{
-			controlEnabled = True
-		}
-		enablePitch_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableRoll_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableX_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableY_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableZ_UIFlight
-		{
-			controlEnabled = True
-		}
-		useThrottle_UIFlight
-		{
-			controlEnabled = True
-		}
-		fullThrust_UIFlight
-		{
-			controlEnabled = True
-		}
-		EVENTS
-		{
-			ToggleToggles
-			{
-				active = True
-				guiActive = True
-				guiActiveEditor = True
-				guiActiveUncommand = False
-				guiIcon = Actuation Toggles
-				guiName = Show Actuation Toggles
-				category = Actuation Toggles
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Disable
-			{
-				active = True
-				guiActive = True
-				guiActiveEditor = True
-				guiActiveUncommand = False
-				guiIcon = Disable RCS Port
-				guiName = Disable RCS Port
-				category = Disable RCS Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Enable
-			{
-				active = False
-				guiActive = True
-				guiActiveEditor = True
-				guiActiveUncommand = False
-				guiIcon = Enable RCS Port
-				guiName = Enable RCS Port
-				category = Enable RCS Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = RCS: Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-}
-PART
-{
-	part = RCSBlock_4293465836
-	partName = Part
-	pos = 0.3585156,23.44361,0.8577609
-	attPos = 0,0,0
-	attPos0 = 0.3359287,-0.005910873,1.250834
-	rot = 0,0.7933533,0,0.6087614
-	attRot = 0,0,0,1
-	attRot0 = 0,0.7933533,0,0.6087614
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 4
-	dstg = 4
-	sidx = -1
-	sqor = -1
-	sepI = 1
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = RCSBlock_4293465916
-	sym = RCSBlock_4293465876
-	sym = RCSBlock_4293465796
-	sym = RCSBlock_4293465756
-	sym = RCSBlock_4293465716
-	srfN = srfAttach,asasmodule1-2_4293465944
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleRCS
-		isEnabled = True
-		rcsEnabled = True
-		thrustPercentage = 100
-		currentShowToggles = False
-		enableYaw = True
-		enablePitch = True
-		enableRoll = True
-		enableX = True
-		enableY = True
-		enableZ = True
-		useThrottle = False
-		fullThrust = False
-		stagingEnabled = True
-		thrustPercentage_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 100
-			stepIncrement = 0.5
-		}
-		enableYaw_UIFlight
-		{
-			controlEnabled = True
-		}
-		enablePitch_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableRoll_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableX_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableY_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableZ_UIFlight
-		{
-			controlEnabled = True
-		}
-		useThrottle_UIFlight
-		{
-			controlEnabled = True
-		}
-		fullThrust_UIFlight
-		{
-			controlEnabled = True
-		}
-		EVENTS
-		{
-			ToggleToggles
-			{
-				active = True
-				guiActive = True
-				guiActiveEditor = True
-				guiActiveUncommand = False
-				guiIcon = Actuation Toggles
-				guiName = Show Actuation Toggles
-				category = Actuation Toggles
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Disable
-			{
-				active = True
-				guiActive = True
-				guiActiveEditor = True
-				guiActiveUncommand = False
-				guiIcon = Disable RCS Port
-				guiName = Disable RCS Port
-				category = Disable RCS Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Enable
-			{
-				active = False
-				guiActive = True
-				guiActiveEditor = True
-				guiActiveUncommand = False
-				guiIcon = Enable RCS Port
-				guiName = Enable RCS Port
-				category = Enable RCS Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = RCS: Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-}
-PART
-{
-	part = RCSBlock_4293465796
-	partName = Part
-	pos = 1.273805,23.44361,-0.05857983
-	attPos = 0,0,0
-	attPos0 = 1.251219,-0.005910873,0.3344944
-	rot = 0,0.9914449,0,0.1305262
-	attRot = 0,0,0,1
-	attRot0 = 0,0.9914449,0,0.1305262
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 4
-	dstg = 4
-	sidx = -1
-	sqor = -1
-	sepI = 1
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = RCSBlock_4293465916
-	sym = RCSBlock_4293465876
-	sym = RCSBlock_4293465836
-	sym = RCSBlock_4293465756
-	sym = RCSBlock_4293465716
-	srfN = srfAttach,asasmodule1-2_4293465944
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleRCS
-		isEnabled = True
-		rcsEnabled = True
-		thrustPercentage = 100
-		currentShowToggles = False
-		enableYaw = True
-		enablePitch = True
-		enableRoll = True
-		enableX = True
-		enableY = True
-		enableZ = True
-		useThrottle = False
-		fullThrust = False
-		stagingEnabled = True
-		thrustPercentage_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 100
-			stepIncrement = 0.5
-		}
-		enableYaw_UIFlight
-		{
-			controlEnabled = True
-		}
-		enablePitch_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableRoll_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableX_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableY_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableZ_UIFlight
-		{
-			controlEnabled = True
-		}
-		useThrottle_UIFlight
-		{
-			controlEnabled = True
-		}
-		fullThrust_UIFlight
-		{
-			controlEnabled = True
-		}
-		EVENTS
-		{
-			ToggleToggles
-			{
-				active = True
-				guiActive = True
-				guiActiveEditor = True
-				guiActiveUncommand = False
-				guiIcon = Actuation Toggles
-				guiName = Show Actuation Toggles
-				category = Actuation Toggles
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Disable
-			{
-				active = True
-				guiActive = True
-				guiActiveEditor = True
-				guiActiveUncommand = False
-				guiIcon = Disable RCS Port
-				guiName = Disable RCS Port
-				category = Disable RCS Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Enable
-			{
-				active = False
-				guiActive = True
-				guiActiveEditor = True
-				guiActiveUncommand = False
-				guiIcon = Enable RCS Port
-				guiName = Enable RCS Port
-				category = Enable RCS Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = RCS: Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-}
-PART
-{
-	part = RCSBlock_4293465756
-	partName = Part
-	pos = 0.9378768,23.44361,-1.309415
-	attPos = 0,0,0
-	attPos0 = 0.9152901,-0.005910873,-0.9163401
-	rot = 0,0.9238795,0,-0.3826835
-	attRot = 0,0,0,1
-	attRot0 = 0,0.9238795,0,-0.3826835
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 4
-	dstg = 4
-	sidx = -1
-	sqor = -1
-	sepI = 1
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = RCSBlock_4293465916
-	sym = RCSBlock_4293465876
-	sym = RCSBlock_4293465836
-	sym = RCSBlock_4293465796
-	sym = RCSBlock_4293465716
-	srfN = srfAttach,asasmodule1-2_4293465944
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleRCS
-		isEnabled = True
-		rcsEnabled = True
-		thrustPercentage = 100
-		currentShowToggles = False
-		enableYaw = True
-		enablePitch = True
-		enableRoll = True
-		enableX = True
-		enableY = True
-		enableZ = True
-		useThrottle = False
-		fullThrust = False
-		stagingEnabled = True
-		thrustPercentage_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 100
-			stepIncrement = 0.5
-		}
-		enableYaw_UIFlight
-		{
-			controlEnabled = True
-		}
-		enablePitch_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableRoll_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableX_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableY_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableZ_UIFlight
-		{
-			controlEnabled = True
-		}
-		useThrottle_UIFlight
-		{
-			controlEnabled = True
-		}
-		fullThrust_UIFlight
-		{
-			controlEnabled = True
-		}
-		EVENTS
-		{
-			ToggleToggles
-			{
-				active = True
-				guiActive = True
-				guiActiveEditor = True
-				guiActiveUncommand = False
-				guiIcon = Actuation Toggles
-				guiName = Show Actuation Toggles
-				category = Actuation Toggles
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Disable
-			{
-				active = True
-				guiActive = True
-				guiActiveEditor = True
-				guiActiveUncommand = False
-				guiIcon = Disable RCS Port
-				guiName = Disable RCS Port
-				category = Disable RCS Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Enable
-			{
-				active = False
-				guiActive = True
-				guiActiveEditor = True
-				guiActiveUncommand = False
-				guiIcon = Enable RCS Port
-				guiName = Enable RCS Port
-				category = Enable RCS Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = RCS: Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-}
-PART
-{
-	part = RCSBlock_4293465716
-	partName = Part
-	pos = -0.3133417,23.44361,-1.643909
-	attPos = 0,0,0
-	attPos0 = -0.3359284,-0.005910873,-1.250834
-	rot = 0,0.6087615,0,-0.7933533
-	attRot = 0,0,0,1
-	attRot0 = 0,0.6087615,0,-0.7933533
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 4
-	dstg = 4
-	sidx = -1
-	sqor = -1
-	sepI = 1
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = RCSBlock_4293465916
-	sym = RCSBlock_4293465876
-	sym = RCSBlock_4293465836
-	sym = RCSBlock_4293465796
-	sym = RCSBlock_4293465756
-	srfN = srfAttach,asasmodule1-2_4293465944
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleRCS
-		isEnabled = True
-		rcsEnabled = True
-		thrustPercentage = 100
-		currentShowToggles = False
-		enableYaw = True
-		enablePitch = True
-		enableRoll = True
-		enableX = True
-		enableY = True
-		enableZ = True
-		useThrottle = False
-		fullThrust = False
-		stagingEnabled = True
-		thrustPercentage_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 100
-			stepIncrement = 0.5
-		}
-		enableYaw_UIFlight
-		{
-			controlEnabled = True
-		}
-		enablePitch_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableRoll_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableX_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableY_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableZ_UIFlight
-		{
-			controlEnabled = True
-		}
-		useThrottle_UIFlight
-		{
-			controlEnabled = True
-		}
-		fullThrust_UIFlight
-		{
-			controlEnabled = True
-		}
-		EVENTS
-		{
-			ToggleToggles
-			{
-				active = True
-				guiActive = True
-				guiActiveEditor = True
-				guiActiveUncommand = False
-				guiIcon = Actuation Toggles
-				guiName = Show Actuation Toggles
-				category = Actuation Toggles
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Disable
-			{
-				active = True
-				guiActive = True
-				guiActiveEditor = True
-				guiActiveUncommand = False
-				guiIcon = Disable RCS Port
-				guiName = Disable RCS Port
-				category = Disable RCS Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Enable
-			{
-				active = False
-				guiActive = True
-				guiActiveEditor = True
-				guiActiveUncommand = False
-				guiIcon = Enable RCS Port
-				guiName = Enable RCS Port
-				category = Enable RCS Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = RCS: Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ToggleAction
 			{
 				actionGroup = None
 			}
@@ -4606,7 +3682,7 @@ PART
 {
 	part = fuelTank1-2_4293856450
 	partName = Part
-	pos = 0.02258656,5.466522,-3.526731
+	pos = 0.02258656,5.466522,-3.526732
 	attPos = 0,0,0
 	attPos0 = -1.86789,-0.2921808,3.76771E-08
 	rot = 7.797165E-06,0.7071068,-7.797166E-06,-0.7071068
@@ -4668,7 +3744,7 @@ PART
 {
 	part = engineLargeSkipper_4293847356
 	partName = Part
-	pos = 0.02258656,3.591522,-3.52669
+	pos = 0.02258656,3.591522,-3.526691
 	attPos = 0,0,0
 	attPos0 = -5.412534E-07,-1.875001,7.247529E-13
 	rot = 0,0,0,1
@@ -5031,10 +4107,10 @@ PART
 {
 	part = fuelLine_4293840078
 	partName = CompoundPart
-	pos = 0.6297155,6.828655,-2.475182
+	pos = 0.6297162,6.828655,-2.475183
 	attPos = 0,0,0
 	attPos0 = 1.051575,1.362109,-0.6071275
-	rot = -6.049315E-06,0.8660262,-9.858943E-06,0.4999986
+	rot = -6.049321E-06,0.8660262,-9.858942E-06,0.4999986
 	attRot = 0,0,0,1
 	attRot0 = 5.977067E-07,-0.9659255,-1.601561E-07,0.2588206
 	mir = 1,1,1
@@ -5059,9 +4135,9 @@ PART
 	PARTDATA
 	{
 		tgt = 4293869196
-		pos = -1.243078,-0.009965647,-0.2939907
-		rot = -1.580345E-13,-0.6593483,-5.500671E-06,0.7518378
-		dir = -0.9731248,-0.007801455,-0.2301461
+		pos = -1.243078,-0.009965647,-0.2939906
+		rot = -1.575115E-14,-0.6593484,-5.500672E-06,0.7518379
+		dir = -0.9731248,-0.007801455,-0.230146
 	}
 	MODULE
 	{
@@ -5116,7 +4192,7 @@ PART
 {
 	part = adapterSize2-Size1_4293805326
 	partName = Part
-	pos = 0.02258656,8.591522,-3.526772
+	pos = 0.02258656,8.591522,-3.526773
 	attPos = 0,0,0
 	attPos0 = 2.72076E-05,3.125,3.552709E-13
 	rot = 0,0,0,1
@@ -5175,7 +4251,7 @@ PART
 {
 	part = strutConnector_4293791850
 	partName = CompoundPart
-	pos = 0.3596899,9.549643,-2.942889
+	pos = 0.3596901,9.549643,-2.942889
 	attPos = 0,0,0
 	attPos0 = 0.337103,0.9581203,0.5838789
 	rot = -0.1023608,0.8599547,-0.05909806,0.4964955
@@ -5203,9 +4279,9 @@ PART
 	PARTDATA
 	{
 		tgt = 4293869196
-		pos = -1.566579,-0.5780877,-0.3224785
-		rot = 3.978298E-09,-0.5577301,0.0542155,0.8282501
-		dir = -0.9211431,-0.3399135,-0.1896162
+		pos = -1.566578,-0.5780874,-0.322478
+		rot = 7.023903E-09,-0.5577302,0.05421551,0.8282503
+		dir = -0.9211431,-0.3399136,-0.189616
 	}
 	MODULE
 	{
@@ -5260,7 +4336,7 @@ PART
 {
 	part = strutConnector_4293749876
 	partName = CompoundPart
-	pos = -0.3081694,9.602153,-2.953886
+	pos = -0.3081696,9.602153,-2.953887
 	attPos = 0,0,0
 	attPos0 = -0.3307559,1.01063,0.5728855
 	rot = -0.05909809,0.4964954,-0.1023608,0.8599547
@@ -5288,9 +4364,9 @@ PART
 	PARTDATA
 	{
 		tgt = 4293889034
-		pos = -3.081733,5.789477,0.4126725
-		rot = 1.614014E-09,0.5023452,0.06808098,0.8619829
-		dir = -0.4689498,0.8809896,0.06279672
+		pos = -3.081734,5.789477,0.4126722
+		rot = 9.732741E-10,0.5023453,0.06808098,0.8619829
+		dir = -0.46895,0.8809895,0.06279667
 	}
 	MODULE
 	{
@@ -5345,7 +4421,7 @@ PART
 {
 	part = pointyNoseConeA_4293913050
 	partName = Part
-	pos = 0.02258656,10.46652,-3.526772
+	pos = 0.02258656,10.46652,-3.526773
 	attPos = 0,0,0
 	attPos0 = -4.924634E-12,1.875,-2.783054E-07
 	rot = -2.728484E-12,-1,0,-1.191483E-07
@@ -5402,7 +4478,7 @@ PART
 {
 	part = strutConnector_4293788730
 	partName = CompoundPart
-	pos = 0.8962742,3.963055,-2.653009
+	pos = 0.8962755,3.963055,-2.653009
 	attPos = 0,0,0
 	attPos0 = 0.8736841,-1.503488,-0.8736845
 	rot = -4.791487E-06,0.9238796,-1.042429E-05,0.3826834
@@ -5431,7 +4507,7 @@ PART
 	{
 		tgt = 4293869196
 		pos = -0.5686781,-0.2060084,-0.8282253
-		rot = -1.413777E-09,-0.6531212,0.0939343,0.751405
+		rot = -2.59515E-09,-0.6531213,0.09393431,0.7514051
 		dir = -0.5545003,-0.2008724,-0.8075765
 	}
 	MODULE
@@ -5487,7 +4563,7 @@ PART
 {
 	part = winglet3_4293464366
 	partName = Part
-	pos = 0.02258659,4.003334,-5.214967
+	pos = 0.02258659,4.003334,-5.214972
 	attPos = 0,0,0
 	attPos0 = -1.68826,-1.463153,-1.304298E-07
 	rot = 7.913067E-06,0.7071068,-7.913068E-06,-0.7071068
@@ -6194,7 +5270,7 @@ PART
 	pos = -0.5845402,6.828655,1.689033
 	attPos = 0,0,0
 	attPos0 = 1.051575,1.362109,-0.6071276
-	rot = -9.858943E-06,0.4999986,6.049308E-06,-0.8660263
+	rot = -9.858943E-06,0.4999986,6.04931E-06,-0.8660263
 	attRot = 0,0,0,1
 	attRot0 = 5.977072E-07,-0.9659255,-1.601561E-07,0.2588206
 	mir = 1,1,1
@@ -6220,7 +5296,7 @@ PART
 	{
 		tgt = 4293869196
 		pos = -1.24307,-0.009965647,-0.2939899
-		rot = 2.174485E-13,-0.6593494,-5.318579E-06,0.7518369
+		rot = 2.290976E-13,-0.6593495,-5.31858E-06,0.751837
 		dir = -0.9731246,-0.007801503,-0.2301469
 	}
 	MODULE
@@ -6335,7 +5411,7 @@ PART
 {
 	part = strutConnector_4293791612
 	partName = CompoundPart
-	pos = -0.3145148,9.549643,2.156741
+	pos = -0.3145146,9.549643,2.156741
 	attPos = 0,0,0
 	attPos0 = 0.337103,0.9581203,0.5838789
 	rot = -0.05909805,0.4964954,0.1023608,-0.8599547
@@ -6364,7 +5440,7 @@ PART
 	{
 		tgt = 4293869196
 		pos = -1.566577,-0.5780872,-0.3224802
-		rot = 1.87113E-10,-0.5577279,0.05421611,0.8282514
+		rot = 1.331735E-11,-0.5577279,0.05421611,0.8282514
 		dir = -0.9211428,-0.3399135,-0.1896174
 	}
 	MODULE
@@ -6420,7 +5496,7 @@ PART
 {
 	part = strutConnector_4293746772
 	partName = CompoundPart
-	pos = 0.3533439,9.602153,2.167734
+	pos = 0.3533441,9.602153,2.167734
 	attPos = 0,0,0
 	attPos0 = -0.3307559,1.01063,0.5728851
 	rot = -0.1023609,0.8599547,0.05909808,-0.4964953
@@ -6448,9 +5524,9 @@ PART
 	PARTDATA
 	{
 		tgt = 4293889034
-		pos = -3.081715,5.789442,0.4126704
-		rot = -9.843881E-11,0.5023462,0.06807861,0.8619826
-		dir = -0.4689499,0.8809895,0.06279678
+		pos = -3.081716,5.789442,0.4126704
+		rot = 5.131451E-10,0.5023463,0.06807861,0.8619827
+		dir = -0.46895,0.8809895,0.06279677
 	}
 	MODULE
 	{
@@ -6508,7 +5584,7 @@ PART
 	pos = 0.02258797,10.46652,2.74062
 	attPos = 0,0,0
 	attPos0 = -9.482875E-13,1.875,-3.989408E-08
-	rot = 4.547474E-13,1.634248E-13,1.364242E-12,1
+	rot = 1.818989E-12,1.634248E-13,2.728485E-12,1
 	attRot = 0,0,0,1
 	attRot0 = -9.094947E-13,-1,0,-8.934601E-08
 	mir = 1,1,1
@@ -6565,7 +5641,7 @@ PART
 	pos = -0.8510973,3.963055,1.866862
 	attPos = 0,0,0
 	attPos0 = 0.873684,-1.503488,-0.8736848
-	rot = -1.042429E-05,0.3826832,4.791486E-06,-0.9238797
+	rot = -1.042429E-05,0.3826831,4.791486E-06,-0.9238797
 	attRot = 0,0,0,1
 	attRot0 = 5.716902E-07,-0.9238796,-2.368001E-07,0.3826835
 	mir = 1,1,1
@@ -6590,9 +5666,9 @@ PART
 	PARTDATA
 	{
 		tgt = 4293869196
-		pos = -0.5686798,-0.2060084,-0.8282287
-		rot = 2.726577E-09,-0.6531199,0.09393474,0.7514057
-		dir = -0.5544999,-0.2008716,-0.8075768
+		pos = -0.5686798,-0.2060084,-0.8282288
+		rot = 1.292768E-09,-0.65312,0.09393475,0.7514059
+		dir = -0.5544999,-0.2008716,-0.807577
 	}
 	MODULE
 	{
@@ -7762,6 +6838,870 @@ PART
 				actionGroup = None
 			}
 			ToggleXFeedAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = RCSBlock_4293465916
+	partName = Part
+	pos = -1.242181,23.42947,-0.392332
+	attPos = 0,0,0
+	attPos0 = -1.264768,-0.02005005,0.000742346
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 4
+	dstg = 4
+	sidx = -1
+	sqor = -1
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = RCSBlock_4293996184
+	sym = RCSBlock_4293996098
+	sym = RCSBlock_4293996012
+	sym = RCSBlock_4293995926
+	sym = RCSBlock_4293995840
+	srfN = srfAttach,asasmodule1-2_4293465944
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleRCS
+		isEnabled = True
+		rcsEnabled = True
+		thrustPercentage = 100
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		enableX = True
+		enableY = True
+		enableZ = True
+		stagingEnabled = True
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
+		enableYaw_UIFlight
+		{
+			controlEnabled = True
+		}
+		enablePitch_UIFlight
+		{
+			controlEnabled = True
+		}
+		enableRoll_UIFlight
+		{
+			controlEnabled = True
+		}
+		enableX_UIFlight
+		{
+			controlEnabled = True
+		}
+		enableY_UIFlight
+		{
+			controlEnabled = True
+		}
+		enableZ_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+			ToggleToggles
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Actuation Toggles
+				guiName = Show Actuation Toggles
+				category = Actuation Toggles
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Disable
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Disable RCS Port
+				guiName = Disable RCS Port
+				category = Disable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Enable
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Enable RCS Port
+				guiName = Enable RCS Port
+				category = Enable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = RCS: Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = RCSBlock_4293996184
+	partName = Part
+	pos = -0.609154,23.42947,0.7026176
+	attPos = 0,0,0
+	attPos0 = -0.6317409,-0.02005005,1.095692
+	rot = 0,0.5,0,0.8660254
+	attRot = 0,0,0,1
+	attRot0 = 0,0.5,0,0.8660254
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 4
+	dstg = 4
+	sidx = -1
+	sqor = -1
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = RCSBlock_4293465916
+	sym = RCSBlock_4293996098
+	sym = RCSBlock_4293996012
+	sym = RCSBlock_4293995926
+	sym = RCSBlock_4293995840
+	srfN = srfAttach,asasmodule1-2_4293465944
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleRCS
+		isEnabled = True
+		rcsEnabled = True
+		thrustPercentage = 100
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		enableX = True
+		enableY = True
+		enableZ = True
+		stagingEnabled = True
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
+		enableYaw_UIFlight
+		{
+			controlEnabled = True
+		}
+		enablePitch_UIFlight
+		{
+			controlEnabled = True
+		}
+		enableRoll_UIFlight
+		{
+			controlEnabled = True
+		}
+		enableX_UIFlight
+		{
+			controlEnabled = True
+		}
+		enableY_UIFlight
+		{
+			controlEnabled = True
+		}
+		enableZ_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+			ToggleToggles
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Actuation Toggles
+				guiName = Show Actuation Toggles
+				category = Actuation Toggles
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Disable
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Disable RCS Port
+				guiName = Disable RCS Port
+				category = Disable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Enable
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Enable RCS Port
+				guiName = Enable RCS Port
+				category = Enable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = RCS: Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = RCSBlock_4293996098
+	partName = Part
+	pos = 0.6556136,23.42947,0.7018753
+	attPos = 0,0,0
+	attPos0 = 0.6330268,-0.02005005,1.09495
+	rot = 0,0.8660254,0,0.5
+	attRot = 0,0,0,1
+	attRot0 = 0,0.8660254,0,0.5
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 4
+	dstg = 4
+	sidx = -1
+	sqor = -1
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = RCSBlock_4293465916
+	sym = RCSBlock_4293996184
+	sym = RCSBlock_4293996012
+	sym = RCSBlock_4293995926
+	sym = RCSBlock_4293995840
+	srfN = srfAttach,asasmodule1-2_4293465944
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleRCS
+		isEnabled = True
+		rcsEnabled = True
+		thrustPercentage = 100
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		enableX = True
+		enableY = True
+		enableZ = True
+		stagingEnabled = True
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
+		enableYaw_UIFlight
+		{
+			controlEnabled = True
+		}
+		enablePitch_UIFlight
+		{
+			controlEnabled = True
+		}
+		enableRoll_UIFlight
+		{
+			controlEnabled = True
+		}
+		enableX_UIFlight
+		{
+			controlEnabled = True
+		}
+		enableY_UIFlight
+		{
+			controlEnabled = True
+		}
+		enableZ_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+			ToggleToggles
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Actuation Toggles
+				guiName = Show Actuation Toggles
+				category = Actuation Toggles
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Disable
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Disable RCS Port
+				guiName = Disable RCS Port
+				category = Disable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Enable
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Enable RCS Port
+				guiName = Enable RCS Port
+				category = Enable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = RCS: Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = RCSBlock_4293996012
+	partName = Part
+	pos = 1.287354,23.42947,-0.3938168
+	attPos = 0,0,0
+	attPos0 = 1.264768,-0.02005005,-0.0007424653
+	rot = 0,1,0,-4.371139E-08
+	attRot = 0,0,0,1
+	attRot0 = 0,1,0,-4.371139E-08
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 4
+	dstg = 4
+	sidx = -1
+	sqor = -1
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = RCSBlock_4293465916
+	sym = RCSBlock_4293996184
+	sym = RCSBlock_4293996098
+	sym = RCSBlock_4293995926
+	sym = RCSBlock_4293995840
+	srfN = srfAttach,asasmodule1-2_4293465944
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleRCS
+		isEnabled = True
+		rcsEnabled = True
+		thrustPercentage = 100
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		enableX = True
+		enableY = True
+		enableZ = True
+		stagingEnabled = True
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
+		enableYaw_UIFlight
+		{
+			controlEnabled = True
+		}
+		enablePitch_UIFlight
+		{
+			controlEnabled = True
+		}
+		enableRoll_UIFlight
+		{
+			controlEnabled = True
+		}
+		enableX_UIFlight
+		{
+			controlEnabled = True
+		}
+		enableY_UIFlight
+		{
+			controlEnabled = True
+		}
+		enableZ_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+			ToggleToggles
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Actuation Toggles
+				guiName = Show Actuation Toggles
+				category = Actuation Toggles
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Disable
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Disable RCS Port
+				guiName = Disable RCS Port
+				category = Disable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Enable
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Enable RCS Port
+				guiName = Enable RCS Port
+				category = Enable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = RCS: Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = RCSBlock_4293995926
+	partName = Part
+	pos = 0.6543277,23.42947,-1.488766
+	attPos = 0,0,0
+	attPos0 = 0.6317409,-0.02005005,-1.095692
+	rot = 0,0.8660254,0,-0.5000001
+	attRot = 0,0,0,1
+	attRot0 = 0,0.8660254,0,-0.5000001
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 4
+	dstg = 4
+	sidx = -1
+	sqor = -1
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = RCSBlock_4293465916
+	sym = RCSBlock_4293996184
+	sym = RCSBlock_4293996098
+	sym = RCSBlock_4293996012
+	sym = RCSBlock_4293995840
+	srfN = srfAttach,asasmodule1-2_4293465944
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleRCS
+		isEnabled = True
+		rcsEnabled = True
+		thrustPercentage = 100
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		enableX = True
+		enableY = True
+		enableZ = True
+		stagingEnabled = True
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
+		enableYaw_UIFlight
+		{
+			controlEnabled = True
+		}
+		enablePitch_UIFlight
+		{
+			controlEnabled = True
+		}
+		enableRoll_UIFlight
+		{
+			controlEnabled = True
+		}
+		enableX_UIFlight
+		{
+			controlEnabled = True
+		}
+		enableY_UIFlight
+		{
+			controlEnabled = True
+		}
+		enableZ_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+			ToggleToggles
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Actuation Toggles
+				guiName = Show Actuation Toggles
+				category = Actuation Toggles
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Disable
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Disable RCS Port
+				guiName = Disable RCS Port
+				category = Disable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Enable
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Enable RCS Port
+				guiName = Enable RCS Port
+				category = Enable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = RCS: Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = RCSBlock_4293995840
+	partName = Part
+	pos = -0.6104397,23.42947,-1.488024
+	attPos = 0,0,0
+	attPos0 = -0.6330265,-0.02005005,-1.09495
+	rot = 0,0.5000001,0,-0.8660254
+	attRot = 0,0,0,1
+	attRot0 = 0,0.5000001,0,-0.8660254
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 4
+	dstg = 4
+	sidx = -1
+	sqor = -1
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = RCSBlock_4293465916
+	sym = RCSBlock_4293996184
+	sym = RCSBlock_4293996098
+	sym = RCSBlock_4293996012
+	sym = RCSBlock_4293995926
+	srfN = srfAttach,asasmodule1-2_4293465944
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleRCS
+		isEnabled = True
+		rcsEnabled = True
+		thrustPercentage = 100
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		enableX = True
+		enableY = True
+		enableZ = True
+		stagingEnabled = True
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
+		enableYaw_UIFlight
+		{
+			controlEnabled = True
+		}
+		enablePitch_UIFlight
+		{
+			controlEnabled = True
+		}
+		enableRoll_UIFlight
+		{
+			controlEnabled = True
+		}
+		enableX_UIFlight
+		{
+			controlEnabled = True
+		}
+		enableY_UIFlight
+		{
+			controlEnabled = True
+		}
+		enableZ_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+			ToggleToggles
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Actuation Toggles
+				guiName = Show Actuation Toggles
+				category = Actuation Toggles
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Disable
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Disable RCS Port
+				guiName = Disable RCS Port
+				category = Disable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Enable
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Enable RCS Port
+				guiName = Enable RCS Port
+				category = Enable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = RCS: Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
 			{
 				actionGroup = None
 			}
